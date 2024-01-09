@@ -1,10 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import { createRoot } from "react-dom/client";
+import { ChatApp } from "./ChatApp";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  
-    <App />
- 
-)
+// Access to the Target HTML Element
+const rootElement = document.getElementById("root");
+// Create the Root Point of our App with the Root Element
+const root = createRoot(rootElement);
+// Render the App Component
+root.render(<ChatApp />);
